@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'category',
+    'accounts',
 
 ]
 
@@ -71,6 +72,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'GoMarket.wsgi.application'
 
+AUTH_USER_MODEL = 'accounts.Account'    # Tên model thay thế cho model user mặc định
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
